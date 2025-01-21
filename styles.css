@@ -7,6 +7,9 @@
   font-style: normal;
 }
 /* Shared Styles-------------------------------------- */
+.res-nav-bar{
+    display: none;
+}
 .h1-title{
     font-size: 56px;
     font-weight: 700;
@@ -153,6 +156,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 .curriculum-slide-btn{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .curriculum-slide-btn button {
@@ -167,4 +171,30 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     border: none;
     font-size: 40px;
     margin-right: 10px;
+}
+.curriculum{
+    padding: 60px 0;
+    background-image: url(assets/bg.png);
+    background-color: rgb(223, 240, 230);
+}
+
+/* Responsive style------------------------------------------- */
+@media screen and (max-width: 576px) {
+        .nav-logo h2, 
+        .menu-bar,
+        #contact-btn
+        {
+            display: none;
+        }
+        .res-nav-bar{
+            display: flex;
+
+        }
+        .res-icon{
+            font-size: 50px;
+            background-color: rgb(240, 196, 116);
+        }
+        .hero-section{
+            flex-direction: column-reverse;
+        }    
 }
