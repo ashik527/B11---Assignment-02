@@ -75,6 +75,7 @@ nav{
 }
 .hero-items button{
     background: rgb(17, 17, 17);
+    margin-top: 24px;
 }
 /* Main styles----------------------------------------------- */
 .curriculum-title h1{
@@ -224,7 +225,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     border-radius: 48px;
     background: rgb(149, 178, 38);
 }
-.big-story-card h2,p{
+.big-story-card h2{
+    margin-left: 38px;
+}
+.big-story-card p{
     margin-left: 38px;
 }
 .big-story-card h2{
@@ -331,6 +335,11 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             grid-template-columns: repeat(2, 1fr);
             width: 100%;
             place-items: center;
+        }
+        .enroll-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
 }
