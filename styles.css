@@ -182,15 +182,48 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     background-color: rgb(223, 240, 230);
 }
 /* Stories section--------------------------------------------- */
+.our-stories{
+    background-image: url(assets/bg.png);
+    max-width: 100%;
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    height: 1018px;
+}
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+}
 .big-story-card{
     max-width: 541px;
     height: 631px;
     background: white;
-    border: 1px solid red;
     border-radius: 16px;
     overflow: hidden;
 }
+.story-card{
+    max-width: 291px;
+    height: 302px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.story-card img{
+    height: 59%;
+    width: 100%;
+}
+.story-card h2{
+    white-space: nowrap;
+    font-size: 16px;
+    color: black;
+    margin: 35px 15px;
 
+}
+.story-card .btn-primary{
+    border-radius: 48px;
+    background: rgb(149, 178, 38);
+}
 .big-story-card h2,p{
     margin-left: 38px;
 }
@@ -199,18 +232,57 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     font-weight: 700;
     white-space: nowrap;
 }
+.big-story-card{
+    position: relative;
+}
+.big-story-card button{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+}
 .big-story-btn{
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.small-story-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.story-card button{
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 47.93px;
+    height: 40px;
+    width: 170px;
+}
+.story-card-2 button{
+    background: rgb(93, 88, 240);
+    border: none;
+    color: white;
+}
+.view-all-btn button{
+    background: black;
+}
+.view-all-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
 /* Responsive style------------------------------------------- */
 @media screen and (max-width: 576px) {
         .nav-logo h2, 
         .menu-bar,
-        #contact-btn
+        #contact-btn,
+        .big-story-card,
+        .curriculum-slide-btn
         {
             display: none;
         }
@@ -253,4 +325,12 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             white-space: nowrap;
             max-width: 100%;
         }
+        
+        .small-story-cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            place-items: center;
+        }
+        
 }
