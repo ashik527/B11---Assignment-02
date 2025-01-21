@@ -306,9 +306,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
         .nav-bar{
             border-bottom: 1px solid rgb(254, 163, 1);
         }
-        *{
-            /* outline: 1px solid red; */
-        }
+        
         html,body {
             margin: 0;
             padding: 0;
