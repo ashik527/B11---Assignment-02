@@ -111,6 +111,7 @@ nav{
     font-size: 24px;
     font-weight: 700;
     white-space: nowrap;
+    margin: 0 auto;
     
 }
 .curriculum-cards{
@@ -146,12 +147,15 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .card-1 button{
     color: rgb(100, 200, 255);
+    margin: 0 auto;
 }
 .card-2 button{
     color: rgb(240, 170, 0);
+    margin: 0 auto;
 }
 .card-3 button{
     color: rgb(135, 0, 255);
+    margin: 0 auto;
 }
 .curriculum-slide-btn{
     display: flex;
@@ -177,6 +181,30 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     background-image: url(assets/bg.png);
     background-color: rgb(223, 240, 230);
 }
+/* Stories section--------------------------------------------- */
+.big-story-card{
+    max-width: 541px;
+    height: 631px;
+    background: white;
+    border: 1px solid red;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.big-story-card h2,p{
+    margin-left: 38px;
+}
+.big-story-card h2{
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.big-story-btn{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Responsive style------------------------------------------- */
 @media screen and (max-width: 576px) {
@@ -193,8 +221,36 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
         .res-icon{
             font-size: 50px;
             background-color: rgb(240, 196, 116);
+            height: 50px;
         }
         .hero-section{
             flex-direction: column-reverse;
-        }    
+
+        }
+        .nav-bar{
+            border-bottom: 1px solid rgb(254, 163, 1);
+        }
+        *{
+            /* outline: 1px solid red; */
+        }
+        html,body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            width: 100%;        /* Ensure full viewport width */
+        }
+        .header-section{
+            max-width: 357px;
+        }
+        .curriculum-cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .card{
+            margin: 0 auto;
+        }
+        .standard-title{
+            white-space: nowrap;
+            max-width: 100%;
+        }
 }
