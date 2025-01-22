@@ -24,6 +24,9 @@
     font-weight: 400;
     color: rgb(17, 17, 17);
 }
+.c-white{
+    color: white;
+}
 .c-orange{
     color: rgb(254, 163, 1);
 }
@@ -43,10 +46,18 @@
     height: 50px;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
 }
 .display-flex{
     display: flex;
     justify-content: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-flex{
+    flex-direction: column;
 }
 .section-space{
     margin-bottom: 80px;
@@ -56,10 +67,7 @@
     max-width: 1160px;
     margin: 0 auto;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-}
+
 nav{
     justify-content: space-between;
 }
@@ -176,17 +184,17 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     border: none;
     font-size: 40px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .curriculum{
     padding: 60px 0;
     background-image: url(assets/bg.png);
-    background-color: rgb(223, 240, 230);
+    background-color: rgb(244, 245, 235);
 }
 /* Stories section--------------------------------------------- */
-.our-stories{
-    background-image: url(assets/bg.png);
+.our-stories {
     max-width: 100%;
-    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%), url(assets/bg.png);
     height: 1018px;
 }
 .story-container{
@@ -264,22 +272,57 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 47.93px;
-    height: 40px;
-    width: 170px;
+    max-height: 40px;
+    max-width: 170px;
 }
-.story-card-2 button{
+#ss-btn{
     background: rgb(93, 88, 240);
     border: none;
     color: white;
 }
 .view-all-btn button{
     background: black;
+    cursor: pointer;
 }
 .view-all-btn{
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
+/* Footer Styles------------------------------------------ */
+.footer-section{
+    max-width: 100%;
+    height: 380px;
+    background-color: rgb(1, 172, 253);
+    padding: 125px 150px;
+}
+.footer-container{
+    max-width: 1360px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.f-list{
+    list-style: none;
+}
+.f-logo-img{
+    margin-right: 10px;
+}
+.fc-2-menus{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 25px;
+}
+.fc-2-title{
+    margin-left: 35px;
+}
+
+
 /* Responsive style------------------------------------------- */
 @media screen and (max-width: 576px) {
         .nav-logo h2, 
@@ -298,6 +341,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             font-size: 50px;
             background-color: rgb(240, 196, 116);
             height: 50px;
+            cursor: pointer;
         }
         .hero-section{
             flex-direction: column-reverse;
@@ -310,8 +354,8 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
         html,body {
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            width: 100%;        /* Ensure full viewport width */
+            overflow-x: hidden;
+            width: 100%;
         }
         .header-section{
             max-width: 357px;
@@ -339,5 +383,25 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             align-items: center;
             justify-content: center;
         }
-        
+        /* Responsive footer */
+
+        .footer-container{
+            max-width: 100%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .footer-section{
+            max-width: 100%;
+            height: auto;
+            background-color: rgb(1, 172, 253);
+            padding: 50px 20px;
+        }
+        .f-logo-description{
+            display: flex;
+            justify-content: center;
+        }
+        .footer-logo{
+            justify-content: flex-start;
+        }
 }
